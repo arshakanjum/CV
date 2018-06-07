@@ -1,0 +1,71 @@
+/**
+ *  Matt Cowley - CV: An elegant and expandable CV design made with SASS, HTML and love.
+ *  <https://github.com/MattIPv4/CV/>
+ *  Copyright (C) 2018 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Please see <https://github.com/MattIPv4/CV/blob/master/LICENSE.md> for the full license.
+ */
+@import '../core/globals';
+
+.menu {
+
+  .buttons {
+
+    display: flex;
+    justify-content: flex-end;
+
+    ul {
+
+      display: inline-flex;
+
+      a {
+        background: #353638;
+        font-family: 'Lato', Helvetica, sans-serif;
+        font-size: 12px;
+        font-style: italic;
+        line-height: 45px;
+        padding: 16px 17px;
+        text-decoration: none;
+
+        &:hover {
+          background: #020609;
+
+          .icon {
+            color: #e4e3e8;
+          }
+        }
+      }
+    }
+
+    .icon {
+      color: #02070a;
+      font-size: 18px;
+      font-style: normal;
+      padding-right: 6px;
+    }
+  }
+
+  .nav {
+    margin-top: 15px;
+
+    li {
+      border-left: $border;
+
+      &:first-child {
+        border-left: 0;
+      }
+
+      a {
+        font-family: 'Lato', Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 0 20px;
+        text-decoration: none;
+
+        &:hover {
+          color: desaturate($primary, 25%);
+        }
+      }
+    }
+  }
+}
+
